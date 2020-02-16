@@ -1,0 +1,5 @@
+proxysettings:
+  - fromhost: 127.0.0.1
+    fromport: 8542
+    tohost: 127.0.0.1
+    toport: 8543
