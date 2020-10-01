@@ -10,7 +10,7 @@ The executable takes only a few megabytes, the application consumes very low mem
 
 # Install
 
-```console
+```go
 go get github.com/nfoerster/fastproxy
 ```
 
@@ -18,12 +18,12 @@ go get github.com/nfoerster/fastproxy
 
 Go these steps to use Fastproxy:
 * compile the program for linux or windows with the supported Makefile or with go directly: 
-```console
+```go
 go build cmd/main.go
 ```
 * define your routing options in the config.yml
 * start the program with the associated configuration. E.g. go run cmd/main.go -configPath="./config.yml" // fastproxy -configPath="./config.yml"
-```console
+```go
 go run cmd/main.go -configPath="./config.yml" // fastproxy -configPath="./config.yml"
 ```
 
@@ -32,7 +32,7 @@ go run cmd/main.go -configPath="./config.yml" // fastproxy -configPath="./config
 ## Import 
 ```go
 import (
-"github.com/nfoerster/fastproxy
+    "github.com/nfoerster/fastproxy
 )
 ```
 ## Usage example 
