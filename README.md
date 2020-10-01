@@ -20,7 +20,3 @@ Go these steps to use Fastproxy:
 * compile the program for linux or windows with the supported Makefile or with go directly: go build cmd/main.go
 * define your routing options in the config.yml
 * start the program with the associated configuration. E.g. go run cmd/main.go -configPath="./config.yml" // fastproxy -configPath="./config.yml"
-
-## License & Contribution
-
-Please feel free to fork or use it as you like.
