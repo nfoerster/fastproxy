@@ -22,7 +22,7 @@ Go these steps to use Fastproxy:
 go build cmd/main.go
 ```
 * define your routing options in the config.yml
-* start the program with the associated configuration. E.g. go run cmd/main.go -configPath="./config.yml" // fastproxy -configPath="./config.yml"
+* start the program with the associated configuration.
 ```go
 go run cmd/main.go -configPath="./config.yml" // fastproxy -configPath="./config.yml"
 ```
