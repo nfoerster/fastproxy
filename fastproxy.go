@@ -30,7 +30,7 @@ func ReadConfig(configPath string) *Config {
 //StartProxies starts all proxies for the given configuration
 func StartProxies(config *Config) {
 	for _, proxy := range config.Proxies {
-		go goProxy(proxy.FromHost,
+		go GoProxy(proxy.FromHost,
 			proxy.FromPort,
 			proxy.ToHost,
 			proxy.ToPort)
@@ -50,7 +50,7 @@ func handleConnection(sourceConn net.Conn, destConn net.Conn) {
 	}()
 }
 
-func goProxy(fromhost string, fromport int, tohost string, toport int) {
+func GoProxy(fromhost string, fromport int, tohost string, toport int) {
 	conn, err := net.Listen("tcp", fmt.Sprintf("%s:%d", fromhost, fromport))
 	if err != nil {
 		log.Fatal(err)
